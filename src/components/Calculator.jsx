@@ -110,6 +110,25 @@ export default function Calculator() {
     setWaitingForSecond(false)
   }
 
+  function handleLog() {
+    if (display === 'Error') return
+    const val = parseFloat(display)
+    if (val <= 0 || isNaN(val)) {
+      setDisplay('Error')
+      setHistory(`log(${display})`)
+      setFirst(null)
+      setOperator(null)
+      setWaitingForSecond(false)
+      return
+    }
+    const result = Math.log10(val)
+    setDisplay(fmt(result))
+    setHistory(`log(${fmt(val)})`)
+    setFirst(null)
+    setOperator(null)
+    setWaitingForSecond(false)
+  }
+
   const isError = display === 'Error'
 
   return (
@@ -124,6 +143,7 @@ export default function Calculator() {
         <button className="btn btn-clear" onClick={clearEntry}>CE</button>
         <button className="btn btn-fn" onClick={toggleSign}>±</button>
         <button className="btn btn-op" onClick={() => handleOperator('/')}>÷</button>
+        <button className="btn btn-fn" onClick={handleLog}>log</button>
 
         {/* Row 2 */}
         <button className="btn btn-digit" onClick={() => inputDigit('7')}>7</button>
