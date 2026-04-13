@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #181825;
+  color: #cdd6f4;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #1e1e2e 0%, #313244 100%);
+  border-bottom: 3px solid #7287fd;
+  padding: 3.5rem 2rem 3rem;
+  text-align: center;
+  margin: 0 -1.5rem 3rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #cdd6f4;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a6adc8;
+  font-size: 1.1rem;
+}
+
+/* ── Sections ── */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #89b4fa;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #313244;
+}
+
+section h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #cba6f7;
+  margin: 1.25rem 0 0.4rem;
+}
+
+section p {
+  color: #bac2de;
+  margin-bottom: 0.75rem;
+}
+
+section ul,
+section ol {
+  color: #bac2de;
+  padding-left: 1.5rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+/* ── Calculator section ── */
+.calculator-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Features grid ── */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.feature-card {
+  background: #1e1e2e;
+  border: 1px solid #313244;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #89dceb;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ── How-to list ── */
+.how-to-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.how-to-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.how-to-list li::before {
+  counter-increment: item;
+  content: counter(item);
+  background: #7287fd;
+  color: #1e1e2e;
+  font-weight: 700;
+  font-size: 0.85rem;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* ── Math section ── */
+.math-section ul {
+  margin-bottom: 0.75rem;
+}
+
+/* ── Tips ── */
+.tips-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips-list li {
+  background: #1e1e2e;
+  border-left: 4px solid #a6e3a1;
+  border-radius: 0 8px 8px 0;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+kbd {
+  background: #313244;
+  border: 1px solid #45475a;
+  border-radius: 5px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.85em;
+  font-family: monospace;
+  color: #cdd6f4;
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  color: #585b70;
+  font-size: 0.9rem;
+  border-top: 1px solid #313244;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
