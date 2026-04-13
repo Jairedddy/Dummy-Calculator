@@ -131,3 +131,20 @@
   text-align: left;
   padding-left: 1.25rem;
 }
+
+/* Trigonometric function buttons */
+.btn-sin,
+.btn-cos,
+.btn-tan {
+  background: #d1001f;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-sin:hover,
+.btn-cos:hover,
+.btn-tan:hover {
+  background: #ffffff;
+  color: #d1001f;
+}
