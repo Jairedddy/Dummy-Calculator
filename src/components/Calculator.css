@@ -1,14 +1,14 @@
 .calculator {
-  background: #1e1e2e;
+  background: #ff0000;
   border-radius: 16px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 40px rgba(255, 0, 0, 0.5);
   padding: 1.5rem;
   width: 360px;
   margin: 0 auto;
 }
 
 .display {
-  background: #11111b;
+  background: #ffffff;
   border-radius: 10px;
   padding: 1rem 1.25rem;
   margin-bottom: 1.25rem;
@@ -21,7 +21,7 @@
 
 .display-history {
   font-size: 0.85rem;
-  color: #6c7086;
+  color: #ff0000;
   min-height: 1.2em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31,7 +31,7 @@
 .display-current {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #cdd6f4;
+  color: #ff0000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -51,7 +51,7 @@
   font-weight: 500;
   padding: 0.75rem 0;
   transition: filter 0.1s, transform 0.08s;
-  color: #cdd6f4;
+  color: #ffffff;
 }
 
 .btn:active {
@@ -60,62 +60,67 @@
 }
 
 .btn-digit {
-  background: #313244;
+  background: #ff0000;
 }
 
 .btn-digit:hover {
-  background: #45475a;
+  background: #ffffff;
+  color: #ff0000;
 }
 
 .btn-op {
-  background: #7287fd;
-  color: #1e1e2e;
+  background: #ffffff;
+  color: #ff0000;
   font-weight: 700;
 }
 
 .btn-op:hover {
-  background: #8aadf4;
+  background: #ff0000;
+  color: #ffffff;
 }
 
 .btn-fn {
-  background: #45475a;
+  background: #ff0000;
   font-size: 0.9rem;
 }
 
 .btn-fn:hover {
-  background: #585b70;
+  background: #ffffff;
+  color: #ff0000;
 }
 
 .btn-const {
-  background: #40a02b;
-  color: #e6e9ef;
+  background: #ff0000;
+  color: #ffffff;
   font-weight: 700;
 }
 
 .btn-const:hover {
-  background: #a6e3a1;
-  color: #1e1e2e;
+  background: #ffffff;
+  color: #ff0000;
 }
 
 .btn-clear {
-  background: #f38ba8;
-  color: #1e1e2e;
+  background: #ffffff;
+  color: #ff0000;
   font-weight: 700;
 }
 
 .btn-clear:hover {
-  background: #eba0ac;
+  background: #ff0000;
+  color: #ffffff;
 }
 
 .btn-equals {
-  background: #89dceb;
-  color: #1e1e2e;
+  background: #ff0000;
+  color: #ffffff;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
 .btn-equals:hover {
-  background: #94e2d5;
+  background: #ffffff;
+  color: #ff0000;
 }
 
 .btn-zero {
